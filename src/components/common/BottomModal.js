@@ -52,17 +52,17 @@ const BottomModal = props => {
         </TouchableOpacity>
         <View style={styles.seperator} />
 
-        <TouchableOpacity style={styles.link} onPress={props.close}>
+        {/* <TouchableOpacity style={styles.link} onPress={props.close}>
           <AppIcon name="link" size={hp(20)} color={colors.red} />
           <AppText style={[styles.text, {color: colors.red}]}>
             Activated Card
           </AppText>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <View style={styles.seperator} />
 
         <TouchableOpacity style={styles.link} onPress={props.close}>
-          <AppIcon name="close" size={hp(20)} color={colors.black} />
-          <AppText style={[styles.text, {color: colors.black}]}>Cancel</AppText>
+          <AppIcon name="close" size={hp(20)} color={colors.red} />
+          <AppText style={[styles.text, {color: colors.red}]}>Cancel</AppText>
         </TouchableOpacity>
       </View>
     </Modal>
