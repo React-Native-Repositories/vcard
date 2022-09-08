@@ -189,7 +189,8 @@ export default function MyCards() {
                               {
                                 fontWeight: '500',
                                 color: colors.black,
-                                fontFamily: 'GoogleSans-Medium',
+                                // fontFamily: 'GoogleSans-Medium',
+                                fontSize: RFValue(11)
                               },
                             ]}>
                             {item.name.length > 20
