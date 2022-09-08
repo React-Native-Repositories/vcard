@@ -123,7 +123,7 @@ function AppHeader(props) {
               </Pressable>
             ))}
           {add && (
-            <AnimatedPressable
+            <TouchableOpacity
               delayPressIn={0}
               onPress={() => navigation.navigate(`CreateCardStepOne`)}>
               <AppIcon
@@ -131,7 +131,7 @@ function AppHeader(props) {
                 color={isThemeDark ? 'white' : 'black'}
                 size={hp(30)}
               />
-            </AnimatedPressable>
+            </TouchableOpacity>
           )}
           {openModal && (
             <AnimatedPressable onPress={handleOpenModal}>
@@ -165,8 +165,8 @@ function AppHeader(props) {
               delayPressIn={0}
               onPress={() => setModalVisible(!modalVisible)}>
               <AppText style={{color: 'white', fontSize: RFValue(14)}}>
-                {getValue(userInfo, `email`, '') &&
-                  getValue(userInfo, `email`, '').charAt(0).toUpperCase()}
+                {getValue(userInfo, `email`, 'SK') &&
+                  getValue(userInfo, `email`, 'SK').toUpperCase()}
               </AppText>
             </TouchableOpacity>
           )}

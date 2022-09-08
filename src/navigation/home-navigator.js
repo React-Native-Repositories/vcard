@@ -78,7 +78,7 @@ export default function HomeTabNavigation() {
         }}
       />
 
-      {/* <Tab.Screen
+      <Tab.Screen
         name="More"
         component={MoreScreen}
         options={{
@@ -92,7 +92,7 @@ export default function HomeTabNavigation() {
             <AppIcon name="menu" size={hp(25)} color={'white'} />
           ),
         }}
-      /> */}
+      />
     </Tab.Navigator>
   );
 }

@@ -7,12 +7,13 @@ export const colors = {
     green:'#5eb876',
     violetLight:'#8d6cb6',
     red:'#CB4335',
+    orange:'#FF9932',
     // shade colors
     gray:'#f7f6f7',
     violetOpacity:'#e1dffd',
     yellowOpacity:'#fef7e4',
     greenOpacity:'#e8f4ea',
-
+    subtextColor:'#707070',
     textInputBorder:'#0000001A'
 
 }

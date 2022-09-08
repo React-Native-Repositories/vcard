@@ -88,8 +88,8 @@ export default function ProfileModal(props) {
                 </AnimatedPressable> */}
                 <Image
                   source={require(`../../assets/images/logo.png`)}
-                  height={hp(38)}
-                  width={wp(123)}
+                  height={hp(48)}
+                  width={wp(133)}
                   resizeMode="contain"
                   style={{alignSelf:'center'}}
                   alt="logo"
@@ -126,6 +126,7 @@ export default function ProfileModal(props) {
                       fontSize: RFValue(12),
                       fontWeight: '500',
                       fontFamily: 'GoogleSans-Medium',
+                      color:colors.black
                     }}>
                     {/* {getValue(userInfo, `vendor.vendor_name`, '')} */}
                     T Sethu Kumar
@@ -208,6 +209,7 @@ export default function ProfileModal(props) {
                     marginLeft: hp(45),
                     fontFamily: 'GoogleSans-Regular',
                     fontSize: RFValue(12),
+                    color:colors.black
                   }}>
                   Sign out
                 </Text>
@@ -236,6 +238,7 @@ export default function ProfileModal(props) {
                     fontFamily: 'GoogleSans-Regular',
                     textAlign: 'left',
                     fontSize: RFValue(12),
+                    color:colors.black
                   }}>
                   Help & Feedback
                 </Text>

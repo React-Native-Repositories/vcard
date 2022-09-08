@@ -52,12 +52,12 @@ const BottomModal = props => {
         </TouchableOpacity>
         <View style={styles.seperator} />
 
-        {/* <TouchableOpacity style={styles.link} onPress={props.close}>
-          <AppIcon name="link" size={hp(20)} color={colors.red} />
-          <AppText style={[styles.text, {color: colors.red}]}>
-            Activated Card
+        <TouchableOpacity style={styles.link} onPress={props.close}>
+          <AppIcon name="qr-code" size={hp(17)} color={colors.orange} />
+          <AppText style={[styles.text, {color: colors.orange}]}>
+            QR Code
           </AppText>
-        </TouchableOpacity> */}
+        </TouchableOpacity>
         <View style={styles.seperator} />
 
         <TouchableOpacity style={styles.link} onPress={props.close}>

@@ -10,6 +10,7 @@ import {
   Image,
   TouchableOpacity,
   View,
+  ImageBackground,
 } from 'react-native';
 import React, {useState} from 'react';
 import {colors} from '../../../common/colors';
@@ -112,12 +113,11 @@ export default function MyCards() {
 
   return (
     <MainLayout>
-      <AppHeader headerName={'My Cards'} add={true}/>
+      <AppHeader headerName={'My Cards'} add={true} />
       <ScrollView
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}>
         <View style={styles.categoriesContainer}>
-          <StatusBar animated={true} color={'hidden'} />
           <FlatList
             // data={createRows(data, columns)}
             style={{marginBottom: 15}}
@@ -172,21 +172,37 @@ export default function MyCards() {
                     <View
                       style={{
                         // flexDirection: 'row',
-                        backgroundColor: colors.gray,
-                        borderWidth: 5,
+                        backgroundColor: colors.white,
+                        borderWidth: 1,
+                        padding: hp(15),
                         borderColor: colors.white,
-                        padding: hp(10),
-                        borderColor: colors.white,
-                        borderBottomLeftRadius: hp(10),
-                        borderBottomRightRadius: hp(10),
+                        borderTopColor: colors.gray,
+                        // borderBottomLeftRadius: hp(10),
+                        // borderBottomRightRadius: hp(10),
                       }}>
                       <Pressable onPress={() => navigateToEditPage()}>
                         <View>
-                          <AppText style={[styles.text, {fontWeight: '500'}]}>
-                            {item.name}
-                          </AppText>
-                          <AppText style={styles.text}>{item.title}</AppText>
                           <AppText
+                            fontWeight="bold"
+                            style={[
+                              styles.text,
+                              {
+                                fontWeight: '500',
+                                color: colors.black,
+                                fontFamily: 'GoogleSans-Medium',
+                              },
+                            ]}>
+                            {item.name.length > 20
+                              ? item.name.slice(0, 20).concat('...')
+                              : item.name}
+                          </AppText>
+                          <AppText
+                            style={[styles.text, {fontSize: RFValue(9)}]}>
+                            {item.title.length > 20
+                              ? item.title.slice(0, 20).concat('...')
+                              : item.title}
+                          </AppText>
+                          {/* <AppText
                             style={[
                               styles.text,
                               {
@@ -197,7 +213,7 @@ export default function MyCards() {
                               },
                             ]}>
                             {item.status}
-                          </AppText>
+                          </AppText> */}
                         </View>
                       </Pressable>
                     </View>
@@ -242,8 +258,11 @@ const styles = StyleSheet.create({
     height: hp(50),
   },
   text: {
-    fontSize: RFValue(10),
+    // fontSize: RFValue(11),
     marginLeft: hp(10),
-    color: colors.black,
+    // color: colors.black,
+  },
+  image: {
+    justifyContent: 'center',
   },
 });
