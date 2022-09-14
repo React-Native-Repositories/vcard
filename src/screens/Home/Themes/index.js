@@ -60,7 +60,7 @@ export default function ThemesScreen() {
             delayPressIn={0}
             style={{
               flexDirection: 'row',
-              backgroundColor: colors.yellow,
+              backgroundColor: colors.secondary,
               borderWidth: 3,
               borderColor: colors.white,
               padding: hp(10),
@@ -139,11 +139,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'GoogleSans-Medium',
     marginTop: hp(20),
-    // backgroundColor:colors.yellow,
+    // backgroundColor:colors.secondary,
     padding: 10,
     // borderWidth:3,
     borderColor: colors.white,
-    color: colors.violet,
+    color: colors.primary,
   },
   amount: {
     fontSize: RFValue(18),

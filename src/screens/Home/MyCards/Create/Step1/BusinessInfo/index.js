@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     height: hp(120),
     width: hp(120),
     borderRadius: hp(10),
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.secondary,
   },
   picker: {
     height: hp(200),

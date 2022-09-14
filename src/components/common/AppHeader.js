@@ -74,7 +74,7 @@ function AppHeader(props) {
         backgroundColor: isThemeDark ? ThemeColors.dark.headerColor : '#fff',
         justifyContent: 'center',
       }}>
-      <StatusBar bg="white" barStyle="light-content" />
+      {/* <StatusBar bg="white" barStyle="light-content" /> */}
       <HStack
         // bg="white"
         px="1"
@@ -127,8 +127,8 @@ function AppHeader(props) {
               delayPressIn={0}
               onPress={() => navigation.navigate(`CreateCardStepOne`)}>
               <AppIcon
-                name="add-circle"
-                color={isThemeDark ? 'white' : 'black'}
+                name="add"
+                color={isThemeDark ? 'white' :  colors.green}
                 size={hp(30)}
               />
             </TouchableOpacity>
@@ -157,7 +157,7 @@ function AppHeader(props) {
                 height: hp(32),
                 width: hp(32),
                 borderRadius: hp(16),
-                backgroundColor: colors.yellow,
+                backgroundColor: colors.tabMenuActive,
                 marginLeft: hp(18),
                 alignItems: 'center',
                 justifyContent: 'center',

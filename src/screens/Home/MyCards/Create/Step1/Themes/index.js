@@ -54,7 +54,7 @@ export default function CreateThemeScreen() {
             <View style={styles.textView}>
               <TouchableOpacity
                 style={{
-                  backgroundColor: colors.yellow,
+                  backgroundColor: colors.secondary,
                   padding: hp(5),
                   borderRadius: hp(5),
                 }}>

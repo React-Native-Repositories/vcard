@@ -18,7 +18,7 @@ export default function Welcome() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <StatusBar animated={true} backgroundColor={colors.violet} />
+      {/* <StatusBar animated={true} backgroundColor={colors.primary} /> */}
       <AppText style={styles.headerText}>Let's Get Started</AppText>
       <View
         style={{
@@ -46,7 +46,7 @@ export default function Welcome() {
           style={[styles.footerLink]}>
           <AppText style={styles.footerLink}>
             Already have an account?{' '}
-            <AppText style={[styles.footerLink, {color: colors.yellow}]}>
+            <AppText style={[styles.footerLink, {color: colors.secondary}]}>
               Sign In
             </AppText>
           </AppText>
@@ -59,7 +59,7 @@ export default function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.violet,
+    backgroundColor: colors.gray,
     alignItems: 'center',
   },
   headerText: {
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     fontSize: RFValue(30),
     marginTop: hp(100),
     fontWeight: '700',
-    color: 'white',
+    color: colors.black,
     fontFamily: 'GoogleSans-Regular',
   },
   footerContainer: {
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   },
   footerButton: {
     width: '100%',
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.secondary,
     height: hp(44),
     borderRadius: hp(7),
     justifyContent: 'center',
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   footerLink: {
     marginTop: hp(10),
     fontSize: RFValue(12),
-    color: colors.white,
+    color: colors.black,
     textAlign: 'center',
     fontFamily: 'GoogleSans-Regular',
   },

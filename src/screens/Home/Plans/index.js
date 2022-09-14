@@ -141,7 +141,7 @@ export default function PlanScreen() {
                       delayPressIn={0}
                       style={{
                         flexDirection: 'row',
-                        backgroundColor: colors.yellow,
+                        backgroundColor: colors.secondary,
                         borderWidth: 3,
                         borderColor: colors.white,
                         padding: hp(15),
@@ -226,7 +226,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'GoogleSans-Regular',
     marginTop: hp(20),
-    // backgroundColor:colors.yellow,
+    // backgroundColor:colors.secondary,
     padding: 10,
     // borderWidth:3,
     borderColor: colors.white,

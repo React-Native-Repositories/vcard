@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
   button: {
     // width:'90%',
     marginTop: hp(20),
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.secondary,
     padding: hp(13),
     borderRadius: hp(5),
     marginBottom: hp(100),
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     height: hp(100),
     width: hp(100),
     borderRadius: hp(50),
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.secondary,
   },
   picker: {
     height: hp(200),

@@ -41,28 +41,28 @@ const BottomModal = props => {
         <TouchableOpacity
           style={styles.link}
           onPress={props.navigateToEditPage}>
-          <AppIcon name="create" size={hp(20)} color={colors.yellow} />
-          <AppText style={[styles.text, {color: colors.yellow}]}>Edit</AppText>
+          <AppIcon name="create" size={hp(20)} color={colors.secondary} />
+          <AppText style={[styles.text, {color: colors.secondary}]}>Edit</AppText>
         </TouchableOpacity>
         <View style={styles.seperator} />
 
         <TouchableOpacity style={styles.link} onPress={props.onShare}>
-          <AppIcon name="share" size={hp(20)} color={colors.violet} />
-          <AppText style={[styles.text, {color: colors.violet}]}>Send</AppText>
+          <AppIcon name="share" size={hp(20)} color={colors.orange} />
+          <AppText style={[styles.text, {color: colors.orange}]}>Send</AppText>
         </TouchableOpacity>
         <View style={styles.seperator} />
 
         <TouchableOpacity style={styles.link} onPress={props.close}>
-          <AppIcon name="qr-code" size={hp(17)} color={colors.orange} />
-          <AppText style={[styles.text, {color: colors.orange}]}>
+          <AppIcon name="qr-code" size={hp(17)} color={colors.tabMenuActive} />
+          <AppText style={[styles.text, {color: colors.tabMenuActive}]}>
             QR Code
           </AppText>
         </TouchableOpacity>
         <View style={styles.seperator} />
 
         <TouchableOpacity style={styles.link} onPress={props.close}>
-          <AppIcon name="close" size={hp(20)} color={colors.red} />
-          <AppText style={[styles.text, {color: colors.red}]}>Cancel</AppText>
+          <AppIcon name="close" size={hp(20)} color={colors.black} />
+          <AppText style={[styles.text, {color: colors.black}]}>Cancel</AppText>
         </TouchableOpacity>
       </View>
     </Modal>

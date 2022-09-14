@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
   button: {
     // width:'90%',
     marginTop: hp(20),
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.secondary,
     padding: hp(13),
     borderRadius: hp(5),
     marginBottom: hp(30),

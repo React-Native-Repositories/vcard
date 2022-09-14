@@ -104,7 +104,7 @@ export default function ProfileModal(props) {
                     height: hp(32),
                     width: hp(32),
                     borderRadius: hp(16),
-                    backgroundColor: colors.yellow,
+                    backgroundColor: colors.tabMenuActive,
                     alignItems: 'center',
                     justifyContent: 'center',
                     position: 'absolute',

@@ -81,7 +81,7 @@ export default function Register() {
   };
   return (
     <View style={styles.container}>
-      <StatusBar animated={true} backgroundColor={colors.violet} />
+      {/* <StatusBar animated={true} backgroundColor={colors.primary} /> */}
       {/* <View
         style={{
           justifyContent: 'center',
@@ -199,7 +199,7 @@ export default function Register() {
                   <AppText style={styles.footerLink}>
                     Already have an account?{' '}
                     <AppText
-                      style={[styles.footerLink, {color: colors.yellow}]}>
+                      style={[styles.footerLink, {color: colors.secondary}]}>
                       Sign In
                     </AppText>
                   </AppText>
@@ -216,7 +216,7 @@ export default function Register() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.violet,
+    backgroundColor: colors.gray,
     // alignItems: 'center',
   },
   headerText: {
@@ -224,13 +224,13 @@ const styles = StyleSheet.create({
     fontSize: RFValue(30),
     marginTop: hp(40),
     fontWeight: '700',
-    color: 'white',
+    color: colors.black,
     fontFamily: 'GoogleSans-Regular',
   },
   submit: {
     marginTop: hp(24),
     height: hp(50),
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.secondary,
     fontSize: RFValue(14),
     fontFamily: 'GoogleSans-Medium',
     borderRadius: 10,

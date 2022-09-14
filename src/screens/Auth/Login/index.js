@@ -83,7 +83,7 @@ export default function Login() {
   };
   return (
     <View style={styles.container}>
-      <StatusBar animated={true} backgroundColor={colors.violet} />
+      {/* <StatusBar animated={true} backgroundColor={colors.primary} /> */}
       <View
         style={{
           justifyContent: 'center',
@@ -95,7 +95,7 @@ export default function Login() {
         <LottieView
           autoPlay
           loop
-          source={require('../../../assets/lottie-animations/register-ui.json')}
+          source={require('../../../assets/lottie-animations/person.json')}
         />
       </View>
       <View
@@ -168,20 +168,20 @@ export default function Login() {
                   onPress={() => navigation.navigate('Register')}>
                   <AppText style={{color: colors.black,fontSize: RFValue(12),}}>
                     New User?{' '}
-                    <AppText style={{color: colors.yellow,fontSize: RFValue(12),}}>Sign Up</AppText>
+                    <AppText style={{color: colors.secondary,fontSize: RFValue(12),}}>Sign Up</AppText>
                   </AppText>
                 </TouchableOpacity>
                 <TouchableOpacity
                   delayPressIn={0}
                   onPress={() => navigation.navigate('Main')}>
-                  <AppText style={{color: colors.yellow,fontSize: RFValue(12),}}>
+                  <AppText style={{color: colors.secondary,fontSize: RFValue(12),}}>
                     Home
                   </AppText>
                 </TouchableOpacity>
                 <TouchableOpacity
                   delayPressIn={0}
                   onPress={() => navigation.navigate('ForgotPassword')}>
-                  <AppText style={{color: colors.yellow,fontSize: RFValue(12),}}>
+                  <AppText style={{color: colors.secondary,fontSize: RFValue(12),}}>
                     Forgot Password?
                   </AppText>
                 </TouchableOpacity>
@@ -198,7 +198,7 @@ export default function Login() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.violet,
+    backgroundColor: colors.gray,
     // alignItems: 'center',
   },
   headerText: {
@@ -212,7 +212,7 @@ const styles = StyleSheet.create({
   submit: {
     marginTop: hp(24),
     height: hp(50),
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.secondary,
     fontSize: RFValue(14),
     fontFamily: 'GoogleSans-Medium',
     borderRadius: 10,

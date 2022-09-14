@@ -15,8 +15,8 @@ export default function HomeTabNavigation() {
     <Tab.Navigator
       initialRouteName="MyCards"
       screenOptions={{
-        tabBarActiveBackgroundColor: colors.violet,
-        tabBarInactiveBackgroundColor: '#857ff5',
+        tabBarActiveBackgroundColor: colors.white,
+        tabBarInactiveBackgroundColor: colors.white,
         tabBarLabelStyle: {
           fontSize: RFValue(12),
           fontFamily: 'GoogleSans-Regular',
@@ -38,13 +38,11 @@ export default function HomeTabNavigation() {
         options={{
           headerShown: false,
           tabBarLabel: 'MyCards',
-          tabBarActiveTintColor: 'white',
-          tabBarInactiveTintColor: 'white',
-          // tabBarIcon: ({focused}) => focused?
-          // <RefreshSpinner name={'DashboardSvgComponent'} />:<DashboardSvgComponent />
-          tabBarIcon: ({color}) => (
-            <AppIcon name="book" size={hp(25)} color={'white'} />
-          ),
+          tabBarActiveTintColor: colors.tabMenuActive,
+          tabBarInactiveTintColor: colors.tabMenuInActive,
+          tabBarIcon: ({focused}) => focused?
+          <AppIcon name="book" size={hp(25)} color={colors.tabMenuActive} />:
+          <AppIcon name="book" size={hp(25)} color={colors.tabMenuInActive} />
         }}
       />
       <Tab.Screen
@@ -53,13 +51,11 @@ export default function HomeTabNavigation() {
         options={{
           headerShown: false,
           tabBarLabel: 'Themes',
-          tabBarActiveTintColor: 'white',
-          tabBarInactiveTintColor: 'white',
-          // tabBarIcon: ({focused}) => focused?
-          // <RefreshSpinner name={'DashboardSvgComponent'} />:<DashboardSvgComponent />
-          tabBarIcon: ({color}) => (
-            <AppIcon name="layers" size={hp(25)} color={'white'} />
-          ),
+          tabBarActiveTintColor: colors.tabMenuActive,
+          tabBarInactiveTintColor: colors.tabMenuInActive,
+          tabBarIcon: ({focused}) => focused?
+          <AppIcon name="layers" size={hp(25)} color={colors.tabMenuActive} />:
+          <AppIcon name="layers" size={hp(25)} color={colors.tabMenuInActive} />
         }}
       />
       <Tab.Screen
@@ -68,13 +64,11 @@ export default function HomeTabNavigation() {
         options={{
           headerShown: false,
           tabBarLabel: 'Plans',
-          tabBarActiveTintColor: 'white',
-          tabBarInactiveTintColor: 'white',
-          // tabBarIcon: ({focused}) => focused?
-          // <RefreshSpinner name={'DashboardSvgComponent'} />:<DashboardSvgComponent />
-          tabBarIcon: ({color}) => (
-            <AppIcon name="cash" size={hp(25)} color={'white'} />
-          ),
+          tabBarActiveTintColor: colors.tabMenuActive,
+          tabBarInactiveTintColor: colors.tabMenuInActive,
+          tabBarIcon: ({focused}) => focused?
+          <AppIcon name="cash" size={hp(25)} color={colors.tabMenuActive} />:
+          <AppIcon name="cash" size={hp(25)} color={colors.tabMenuInActive} />
         }}
       />
 
@@ -84,13 +78,11 @@ export default function HomeTabNavigation() {
         options={{
           headerShown: false,
           tabBarLabel: 'More',
-          tabBarActiveTintColor: 'white',
-          tabBarInactiveTintColor: 'white',
-          // tabBarIcon: ({focused}) => focused?
-          // <RefreshSpinner name={'DashboardSvgComponent'} />:<DashboardSvgComponent />
-          tabBarIcon: ({color}) => (
-            <AppIcon name="menu" size={hp(25)} color={'white'} />
-          ),
+          tabBarActiveTintColor: colors.tabMenuActive,
+          tabBarInactiveTintColor: colors.tabMenuInActive,
+          tabBarIcon: ({focused}) => focused?
+          <AppIcon name="menu" size={hp(25)} color={colors.tabMenuActive} />:
+          <AppIcon name="menu" size={hp(25)} color={colors.tabMenuInActive} />
         }}
       />
     </Tab.Navigator>

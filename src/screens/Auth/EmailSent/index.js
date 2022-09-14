@@ -11,7 +11,7 @@ export default function EmailSent() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <StatusBar animated={true} backgroundColor={colors.violet} />
+      {/* <StatusBar animated={true} backgroundColor={colors.primary} /> */}
       <View
         style={{
           justifyContent: 'center',
@@ -31,16 +31,16 @@ export default function EmailSent() {
         width: '80%',
         alignSelf: 'center',
         fontSize: RFValue(20),
-        fontWeight:'600',
-        color: colors.white,
+        fontWeight:'700',
+        color: colors.black,
       }}
       >Email Sent !</AppText>
       <AppText
         style={{
           width: '80%',
           alignSelf: 'center',
-          fontSize: RFValue(16),
-          color: colors.white,
+          fontSize: RFValue(13),
+          color: colors.black,
           marginTop:hp(10)
         }}>
         Check your inbox for instructions from us on how to reset your password.
@@ -60,7 +60,7 @@ export default function EmailSent() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.violet,
+    backgroundColor: colors.gray,
     // alignItems: 'center',
   },
   footerContainer: {
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
   },
   footerButton: {
     width: '100%',
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.secondary,
     height: hp(44),
     borderRadius: hp(7),
     justifyContent: 'center',

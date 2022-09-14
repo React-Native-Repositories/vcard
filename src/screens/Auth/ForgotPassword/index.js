@@ -80,7 +80,7 @@ import {
     };
     return (
       <View style={styles.container}>
-        <StatusBar animated={true} backgroundColor={colors.violet} />
+        {/* <StatusBar animated={true} backgroundColor={colors.primary} /> */}
         <View
           style={{
             justifyContent: 'center',
@@ -160,7 +160,7 @@ import {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: colors.violet,
+      backgroundColor: colors.gray,
       // alignItems: 'center',
     },
     headerText: {
@@ -174,7 +174,7 @@ import {
     submit: {
       marginTop: hp(24),
       height: hp(50),
-      backgroundColor: colors.yellow,
+      backgroundColor: colors.secondary,
       fontSize: RFValue(14),
       fontFamily: 'GoogleSans-Medium',
       borderRadius: 10,
