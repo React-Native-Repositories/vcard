@@ -7,7 +7,6 @@ export const colors = {
     tabMenuInActive:'#c3a395',
     tabMenuActive:'#ed7030',
 
-    moreIcons:'#eb413e',
 
     green:'#22a75c',
     greenOpacity:'#d1e8d8',
@@ -19,7 +18,7 @@ export const colors = {
     white:'#fff',
     black:'#000',
     violetLight:'#8d6cb6',
-    red:'#CB4335',
+    red:'#eb413e',
     orange:'#FF9932',
     // shade colors
     gray:'#f7f6f7',

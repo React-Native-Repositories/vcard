@@ -16,7 +16,7 @@ function PrivacySvgComponent(props) {
       <Path
         data-name="Path 3986"
         d="M12 3.19l7 3.11V11a10.473 10.473 0 01-7 9.93A10.473 10.473 0 015 11V6.3l7-3.11M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 6h2v2h-2zm0 4h2v6h-2z"
-        fill={colors.moreIcons}
+        fill={colors.tabMenuActive}
       />
     </Svg>
   )

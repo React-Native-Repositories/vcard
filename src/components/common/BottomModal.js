@@ -47,14 +47,14 @@ const BottomModal = props => {
         <View style={styles.seperator} />
 
         <TouchableOpacity style={styles.link} onPress={props.onShare}>
-          <AppIcon name="share" size={hp(20)} color={colors.orange} />
-          <AppText style={[styles.text, {color: colors.orange}]}>Send</AppText>
+          <AppIcon name="share" size={hp(20)} color={colors.violet} />
+          <AppText style={[styles.text, {color: colors.violet}]}>Send</AppText>
         </TouchableOpacity>
         <View style={styles.seperator} />
 
         <TouchableOpacity style={styles.link} onPress={props.close}>
-          <AppIcon name="qr-code" size={hp(17)} color={colors.tabMenuActive} />
-          <AppText style={[styles.text, {color: colors.tabMenuActive}]}>
+          <AppIcon name="qr-code" size={hp(17)} color={colors.red} />
+          <AppText style={[styles.text, {color: colors.red}]}>
             QR Code
           </AppText>
         </TouchableOpacity>

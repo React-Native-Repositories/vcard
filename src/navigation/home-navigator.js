@@ -41,8 +41,8 @@ export default function HomeTabNavigation() {
           tabBarActiveTintColor: colors.tabMenuActive,
           tabBarInactiveTintColor: colors.tabMenuInActive,
           tabBarIcon: ({focused}) => focused?
-          <AppIcon name="book" size={hp(25)} color={colors.tabMenuActive} />:
-          <AppIcon name="book" size={hp(25)} color={colors.tabMenuInActive} />
+          <AppIcon name="documents" size={hp(25)} color={colors.tabMenuActive} />:
+          <AppIcon name="documents" size={hp(25)} color={colors.tabMenuInActive} />
         }}
       />
       <Tab.Screen
@@ -54,8 +54,8 @@ export default function HomeTabNavigation() {
           tabBarActiveTintColor: colors.tabMenuActive,
           tabBarInactiveTintColor: colors.tabMenuInActive,
           tabBarIcon: ({focused}) => focused?
-          <AppIcon name="layers" size={hp(25)} color={colors.tabMenuActive} />:
-          <AppIcon name="layers" size={hp(25)} color={colors.tabMenuInActive} />
+          <AppIcon name="aperture" size={hp(25)} color={colors.tabMenuActive} />:
+          <AppIcon name="aperture" size={hp(25)} color={colors.tabMenuInActive} />
         }}
       />
       <Tab.Screen

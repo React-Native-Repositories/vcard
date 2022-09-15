@@ -140,14 +140,25 @@ export default function MyCards() {
                         borderTopRightRadius: hp(10),
                         justifyContent: 'center',
                         borderWidth: 0.5,
-                        borderTopColor: item.colorCode
-                          ? item.colorCode
-                          : colors.gray,
+                        // borderTopColor: item.colorCode
+                        //   ? item.colorCode
+                        //   : colors.gray,
                         alignItems: 'center',
                         // borderColor:colors.white
                         borderColor: colors.white,
                       }}
                       onPress={() => showModal()}>
+                    <View
+                      style={{
+                        height:hp(12),
+                        width:hp(12),
+                        borderRadius:hp(3),
+                        backgroundColor:item.colorCode,
+                        position:'absolute',
+                        top:hp(10),
+                        left:hp(10)
+                      }}
+                      />
                       <TouchableOpacity
                         style={{
                           marginLeft: 5,
@@ -165,8 +176,9 @@ export default function MyCards() {
                       </TouchableOpacity>
                       <Image
                         source={require(`../../../assets/images/logo.png`)}
-                        style={{height: hp(50), width: wp(50)}}
+                        style={{height: hp(45), width: wp(45)}}
                       />
+                        
                     </TouchableOpacity>
 
                     <View
@@ -177,9 +189,10 @@ export default function MyCards() {
                         padding: hp(15),
                         borderColor: colors.white,
                         borderTopColor: colors.gray,
-                        // borderBottomLeftRadius: hp(10),
-                        // borderBottomRightRadius: hp(10),
+                        borderBottomLeftRadius: hp(10),
+                        borderBottomRightRadius: hp(10),
                       }}>
+                        
                       <Pressable onPress={() => navigateToEditPage()}>
                         <View>
                           <AppText

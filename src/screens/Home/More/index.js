@@ -22,7 +22,7 @@ export default function MoreScreen() {
         <View style={styles.main}>
           <Pressable style={styles.container}>
             <View style={styles.row}>
-              <AppIcon name={'key'} size={hp(25)} color={colors.moreIcons} />
+              <AppIcon name={'key'} size={hp(25)} color={colors.tabMenuActive} />
               <View style={styles.rowView}>
                 <AppText style={styles.text}>Account</AppText>
                 <AppText style={styles.description}>Profile, Security</AppText>
@@ -34,7 +34,7 @@ export default function MoreScreen() {
               <AppIcon
                 name={'person-circle'}
                 size={hp(25)}
-                color={colors.moreIcons}
+                color={colors.tabMenuActive}
               />
               <View style={styles.rowView}>
                 <AppText style={styles.text}>About Us</AppText>
@@ -62,7 +62,7 @@ export default function MoreScreen() {
               <AppIcon
                 name={'information-circle'}
                 size={hp(25)}
-                color={colors.moreIcons}
+                color={colors.tabMenuActive}
               />
               <View style={styles.rowView}>
                 <AppText style={styles.text}>Help</AppText>
@@ -77,7 +77,7 @@ export default function MoreScreen() {
               <AppIcon
                 name={'person-add'}
                 size={hp(24)}
-                color={colors.moreIcons}
+                color={colors.tabMenuActive}
               />
               <View style={styles.rowView}>
                 <AppText style={styles.text}>Invite a friend</AppText>

@@ -128,7 +128,7 @@ function AppHeader(props) {
               onPress={() => navigation.navigate(`CreateCardStepOne`)}>
               <AppIcon
                 name="add"
-                color={isThemeDark ? 'white' :  colors.green}
+                color={isThemeDark ? 'white' :  colors.black}
                 size={hp(30)}
               />
             </TouchableOpacity>
